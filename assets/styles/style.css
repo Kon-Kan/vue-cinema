@@ -1,0 +1,65 @@
+@import './reset.css';
+@import './fonts.css';
+@import './components/navbar.css';
+@import './components/main.css';
+
+:root {
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --orangeColor: #F18128;
+    --primaryColor: #040D1F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: var(--primaryColor);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.section__title {
+    color: var(--orangeColor);
+    font-family: 'Comfortaa';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.section__title::before{
+    content: '';
+    width: 100%;
+    max-width: 98px;
+    height: 2px;
+    background: var(--orangeColor);
+    position: absolute;
+    bottom: 0;
+}
+
